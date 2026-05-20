@@ -19225,7 +19225,8 @@ var onSocketMessage = {
   }
 };
 var socketURL = (0,_utils_createSocketURL_js__WEBPACK_IMPORTED_MODULE_8__["default"])(parsedResourceQuery);
-(0,_socket_js__WEBPACK_IMPORTED_MODULE_3__["default"])(socketURL, onSocketMessage, options.reconnect);
+// PATCHED: Disabled webpack-dev-server WebSocket — dev build deployed to GitHub Pages
+// (0,_socket_js__WEBPACK_IMPORTED_MODULE_3__["default"])(socketURL, onSocketMessage, options.reconnect);
 
 /***/ }),
 
