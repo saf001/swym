@@ -10,12 +10,16 @@ Modified self-hostable Swym copy utility.
 ## Structure
 - `index.html`
 - `static/version.json`
-- `bundle.js`
-- `bundle.dec.js`
-- `bundle.patched.js`
+- `bundle.js` (active runtime bundle)
+- `bundle.dec.js` (reference/debug copy)
 - `README.md`
 - `README.txt`
 
 ## Hosting
 Serve the repository as static files over HTTP, preserving relative paths.
 The loader in `index.html` reads `static/version.json` and then loads `bundle.js`.
+
+## Repository notes
+- `bundle.js` is the active runtime asset used by the hosted app.
+- `bundle.dec.js` is kept only as a readable reference/debug artifact.
+- Redundant duplicate bundle files were removed to reduce repository size and avoid drift.
