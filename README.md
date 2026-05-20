@@ -8,12 +8,14 @@ Modified self-hostable Swym copy utility.
 - Copies selected content to each target community in sequence.
 
 ## Structure
-- `README.md`
-- `README.txt`
+- `index.html`
+- `static/version.json`
 - `bundle.js`
 - `bundle.dec.js`
 - `bundle.patched.js`
-- `version.json`
+- `README.md`
+- `README.txt`
 
 ## Hosting
 Serve the repository as static files over HTTP, preserving relative paths.
+The loader in `index.html` reads `static/version.json` and then loads `bundle.js`.
